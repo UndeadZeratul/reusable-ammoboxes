@@ -8,6 +8,9 @@ class Legacy_3006Box : ReusableAmmobox {
 		tag "$TAG_3006_BOX";
 //		Inventory.PickupMessage "$PICKUP_3006_BOX";
 		HDPickup.refid LEGACY_HDLD_3006BOX;
+
+		ReusableAmmobox.insertSound "ammoboxes/3006/insert";
+		ReusableAmmobox.extractSound "ammoboxes/3006/extract";
 	}
 
 	override string pickupmessage() {

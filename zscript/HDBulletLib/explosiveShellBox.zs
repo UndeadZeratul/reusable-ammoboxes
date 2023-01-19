@@ -10,6 +10,9 @@ class Legacy_ExplosiveShellBox : ReusableAmmobox {
 
 		ReusableAmmobox.extractMax 4;
 
+
+		ReusableAmmobox.insertSound "ammoboxes/explosiveShell/insert";
+		ReusableAmmobox.extractSound "ammoboxes/explosiveShell/extract";
 	}
 
 	override string pickupmessage() {

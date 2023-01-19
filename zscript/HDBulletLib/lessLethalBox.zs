@@ -10,6 +10,9 @@ class Legacy_LessLethalBox : ReusableAmmobox {
 
 		ReusableAmmobox.extractMax 4;
 
+
+		ReusableAmmobox.insertSound "ammoboxes/lessLethal/insert";
+		ReusableAmmobox.extractSound "ammoboxes/lessLethal/extract";
 	}
 
 	override string pickupmessage() {

@@ -11,6 +11,9 @@ class Legacy_ShellBox : ReusableAmmobox {
 
 		ReusableAmmobox.extractMax 4;
 
+
+		ReusableAmmobox.insertSound "ammoboxes/shell/insert";
+		ReusableAmmobox.extractSound "ammoboxes/shell/extract";
 	}
 
 	override string pickupmessage() {

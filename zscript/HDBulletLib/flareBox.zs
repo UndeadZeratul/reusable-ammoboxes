@@ -10,6 +10,9 @@ class Legacy_FlareBox : ReusableAmmobox {
 
 		ReusableAmmobox.extractMax 4;
 
+
+		ReusableAmmobox.insertSound "ammoboxes/flare/insert";
+		ReusableAmmobox.extractSound "ammoboxes/flare/extract";
 	}
 
 	override string pickupmessage() {

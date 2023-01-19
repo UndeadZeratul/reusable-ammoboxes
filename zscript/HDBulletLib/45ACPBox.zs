@@ -8,6 +8,9 @@ class Legacy_45ACPBox : ReusableAmmobox {
 		tag "$TAG_45ACP_BOX";
 //		Inventory.PickupMessage "$PICKUP_45ACP_BOX";
 		HDPickup.refid LEGACY_HDLD_45ACPBOX;
+
+		ReusableAmmobox.insertSound "ammoboxes/45ACP/insert";
+		ReusableAmmobox.extractSound "ammoboxes/45ACP/extract";
 	}
 
 	override string pickupmessage() {

@@ -1,0 +1,74 @@
+// Default Ammobox Sounds
+ammoboxes/insert                 weapons/pocket
+ammoboxes/extract                weapons/pocket
+
+// Vanilla Ammobox Sounds
+ammoboxes/9mm/insert             ammoboxes/insert
+ammoboxes/9mm/extract            ammoboxes/extract
+
+ammoboxes/7mm/insert             ammoboxes/insert
+ammoboxes/7mm/extract            ammoboxes/extract
+
+ammoboxes/355/insert             ammoboxes/insert
+ammoboxes/355/extract            ammoboxes/extract
+
+ammoboxes/rocket/insert          ammoboxes/insert
+ammoboxes/rocket/extract         ammoboxes/extract
+
+ammoboxes/shell/insert           ammoboxes/insert
+ammoboxes/shell/extract          ammoboxes/extract
+
+// HDBulletLib Ammobox Sounds
+ammoboxes/4gaSlug/insert         ammoboxes/insert
+ammoboxes/4gaSlug/extract        ammoboxes/extract
+
+ammoboxes/5mm/insert             ammoboxes/insert
+ammoboxes/5mm/extract            ammoboxes/extract
+
+ammoboxes/6mm/insert             ammoboxes/insert
+ammoboxes/6mm/extract            ammoboxes/extract
+
+ammoboxes/10mm/insert            ammoboxes/insert
+ammoboxes/10mm/extract           ammoboxes/extract
+
+ammoboxes/45ACP/insert           ammoboxes/insert
+ammoboxes/45ACP/extract          ammoboxes/extract
+
+ammoboxes/45LC/insert            ammoboxes/insert
+ammoboxes/45LC/extract           ammoboxes/extract
+
+ammoboxes/50AE/insert            ammoboxes/insert
+ammoboxes/50AE/extract           ammoboxes/extract
+
+ammoboxes/50AM/insert            ammoboxes/insert
+ammoboxes/50AM/extract           ammoboxes/extract
+
+ammoboxes/50OMG/insert           ammoboxes/insert
+ammoboxes/50OMG/extract          ammoboxes/extract
+
+ammoboxes/069/insert             ammoboxes/insert
+ammoboxes/069/extract            ammoboxes/extract
+
+ammoboxes/420/insert             ammoboxes/insert
+ammoboxes/420/extract            ammoboxes/extract
+
+ammoboxes/500Heavy/insert        ammoboxes/insert
+ammoboxes/500Heavy/extract       ammoboxes/extract
+
+ammoboxes/500Light/insert        ammoboxes/insert
+ammoboxes/500Light/extract       ammoboxes/extract
+
+ammoboxes/3006/insert            ammoboxes/insert
+ammoboxes/3006/extract           ammoboxes/extract
+
+ammoboxes/explosiveShell/insert  ammoboxes/insert
+ammoboxes/explosiveShell/extract ammoboxes/extract
+
+ammoboxes/flare/insert           ammoboxes/insert
+ammoboxes/flare/extract          ammoboxes/extract
+
+ammoboxes/lessLethal/insert      ammoboxes/insert
+ammoboxes/lessLethal/extract     ammoboxes/extract
+
+ammoboxes/slug/insert            ammoboxes/insert
+ammoboxes/slug/extract           ammoboxes/extract

@@ -2,6 +2,9 @@ class ReusableAmmobox : HDMagAmmo {
 	int extractMin;property extractMin:extractMin;
 	int extractMax;property extractMax:extractMax;
 
+	sound insertSound;property insertSound:insertSound;
+	sound extractSound;property extractSound:extractSound;
+
 	default {
 		HDMagAmmo.inserttime 4;
 		HDMagAmmo.extracttime 8;
@@ -9,6 +12,9 @@ class ReusableAmmobox : HDMagAmmo {
 
 		ReusableAmmobox.extractMin 1;
 		ReusableAmmobox.extractMax 10;
+
+		ReusableAmmobox.insertSound "ammoboxes/insert";
+		ReusableAmmobox.extractSound "ammoboxes/extract";
 	}
 
 	// Don't auto-consolidate these like mags
@@ -36,15 +42,33 @@ class ReusableAmmobox : HDMagAmmo {
             HDPickup.DropItem(owner,roundtype,totake);
         }
 
-        // Play the proper sounds
-        // TODO: register new sounds, default to these
-        owner.A_StartSound("weapons/rifleclick2",CHAN_WEAPON);
-        owner.A_StartSound("weapons/rockreload",CHAN_WEAPON,CHANF_OVERLAP,0.4);
+        // Play the proper sound
+		owner.A_StartSound(extractSound,CHAN_AUTO,CHANF_OVERLAP);
 
         // Reduce the magazine by the amount taken and return
         mags[mindex]-=totake;
         return true;
     }
+
+    // Insert a round at a time
+	override bool Insert() {
+		SyncAmount();
+
+		// If there's no mags left or we have a full mag, back out early
+		if(mags.size() < 1 || mags[mags.size()-1] >= maxperunit ||!owner.countinv(roundtype)) {
+		    return false;
+		}
+
+		// Take the inserted round
+		owner.A_TakeInventory(roundtype,1,TIF_NOTAKEINFINITE);
+
+		// Play the proper sound
+		owner.A_StartSound(insertSound,CHAN_AUTO,CHANF_OVERLAP);
+
+		// Increase the magazine by the amount inserted and return
+		mags[mags.size()-1]++;
+		return true;
+	}
 }
 
 class ReusableAmmoboxesSpawner : EventHandler {

@@ -10,6 +10,9 @@ class Legacy_RocketBox : ReusableAmmobox {
 		tag "$TAG_RPG_BOX";
 //		Inventory.PickupMessage "$PICKUP_RPG_BOX";
 		HDPickup.refid LEGACY_HDLD_RKTBOX;
+
+		ReusableAmmobox.insertSound "ammoboxes/rocket/insert";
+		ReusableAmmobox.extractSound "ammoboxes/rocket/extract";
 	}
 
 	override string pickupmessage() {

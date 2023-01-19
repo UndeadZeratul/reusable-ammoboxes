@@ -10,6 +10,9 @@ class Legacy_5mmBox : ReusableAmmobox {
 
 		ReusableAmmobox.extractMax 16;
 
+
+		ReusableAmmobox.insertSound "ammoboxes/5mm/insert";
+		ReusableAmmobox.extractSound "ammoboxes/5mm/extract";
 	}
 
 	override string pickupmessage() {

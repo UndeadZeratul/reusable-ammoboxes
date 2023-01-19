@@ -10,6 +10,9 @@ class Legacy_4gaSlugBox : ReusableAmmobox {
 
 		ReusableAmmobox.extractMax 4;
 
+
+		ReusableAmmobox.insertSound "ammoboxes/4gaSlug/insert";
+		ReusableAmmobox.extractSound "ammoboxes/4gaSlug/extract";
 	}
 
 	override string pickupmessage() {
