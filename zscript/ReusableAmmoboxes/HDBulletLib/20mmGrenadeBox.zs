@@ -11,7 +11,7 @@ class Reusable20mmGrenadeBox : ReusableAmmobox {
 
         tag "$TAG_20MM_BOX";
         Inventory.pickupMessage "$PICKUP_20MM_BOX";
-        HDPickup.refId HDLD_REUSABLE_10MM_BOX;
+        HDPickup.refId HDLD_REUSABLE_20MM_BOX;
 
         ReusableAmmobox.fullSprite "BX20A0";
         ReusableAmmobox.emptySprite "BX20W0";

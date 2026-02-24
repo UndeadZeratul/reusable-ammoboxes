@@ -23,6 +23,7 @@ const HDLD_REUSABLE_NDM_BOX            = "nbx";
 const HDLD_REUSABLE_50AM_BOX           = "mbx";
 const HDLD_REUSABLE_6MMFLECHETTE_BOX   = "6bx";
 const HDLD_REUSABLE_10MM_BOX           = "0bx";
+const HDLD_REUSABLE_20MM_BOX           = "2bx";
 const HDLD_REUSABLE_FLARE_BOX          = "fbx";
 const HDLD_REUSABLE_LESSLETHAL_BOX     = "gbx";
 const HDLD_REUSABLE_762TOKAREV_BOX     = "tbx";
